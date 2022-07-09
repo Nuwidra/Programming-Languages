@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Consulta de veterinario </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Ingrese la cedula del veterinario</h1>
+<form th:action="@{/veterinarios/eliminar}" th:object="${form}" method="post">
+    <p>Cedula del veterinario: <input type="text" th:field="*{cedulaVeterinario}" /></p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>

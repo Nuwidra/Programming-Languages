@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Insertar mascota</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1></h1>
+<h1>Ingrese la informacion de la mascota</h1>
+
+<form th:action="@{/mascotas/insertar}" th:object="${form}" method="post">
+  <p>id de la mascota: <input type="text" th:field="*{idMascota}" /></p>
+  <p>tipo: <input type="text" th:field="*{tipo}" /></p>
+  <p>Nombre: <input type="text" th:field="*{nombre}" /></p>
+  <p>fecha de nacimiento dd/mm/yy: <input type="text" th:field="*{fecha}" /></p>
+
+  <p><input type="submit" value="Submit" /> </p>
+</form>
+
+
+
+</body>
+</html>

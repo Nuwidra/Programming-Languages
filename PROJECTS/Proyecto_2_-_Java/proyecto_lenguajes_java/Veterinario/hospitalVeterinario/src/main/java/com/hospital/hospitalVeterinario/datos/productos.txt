@@ -1,0 +1,29 @@
+1
+palacitina
+ayuda a regular la circulacion sanguinea
+20
+
+2
+oxitocina
+antibiotico
+30
+
+3
+cardomex
+matar larvas del corazon
+25
+
+4
+ratoncito con plumas
+un juguete de forma de ratoncito que tiene plumas
+10
+
+5
+bolita con cascabel
+es una bolita que tiene un cascabel para hacer ruidos interesantes
+15
+
+6
+Hueso de hule
+Es un juguete de hule con forma de hueso
+8

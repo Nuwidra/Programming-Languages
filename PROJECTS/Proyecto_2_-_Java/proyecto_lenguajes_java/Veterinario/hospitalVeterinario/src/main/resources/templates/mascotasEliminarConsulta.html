@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Consulta de Mascota </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Ingrese el id de las mascota</h1>
+<form th:action="@{/mascotas/eliminar}" th:object="${form}" method="post">
+    <p>Id de mascota: <input type="text" th:field="*{idMascota}" /></p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>

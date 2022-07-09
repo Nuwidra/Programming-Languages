@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Facturas </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Ingrese el duenio</h1>
+<form th:action="@{/listaFacturas}" th:object="${form}" method="post">
+    <p>Cedula del Duenio: <input type="text" th:field="*{cedulaDuenio}" /></p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>

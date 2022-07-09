@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Insertar Duenio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1></h1>
+<h1>Ingrese la informacion Informacion del duenio</h1>
+
+<form th:action="@{/duenios/insertar}" th:object="${form}" method="post">
+    <p>Cedula del duenio: <input type="text" th:field="*{cedulaDuenio}" /></p>
+    <p>Nombre: <input type="text" th:field="*{nombre}" /></p>
+    <p>Apellido 1: <input type="text" th:field="*{ap1}" /></p>
+    <p>Apellido 2: <input type="text" th:field="*{ap2}" /></p>
+    <p>Direccion: <input type="text" th:field="*{direccion}" /></p>
+    <p>Telefono: <input type="text" th:field="*{telefono}" /></p>
+    <p>Mascotas(se colocan los ids de las mascotas separados por ",": <input type="text" th:field="*{mascotasRaw}" /></p>
+
+
+
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+
+
+
+</body>
+</html>

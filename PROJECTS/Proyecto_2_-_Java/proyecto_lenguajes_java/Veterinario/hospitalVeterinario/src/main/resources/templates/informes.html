@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hospital de animalitos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p th:text="'Bienvenido, al mejor hospital del mundo' "/>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+    <div class="container">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li th:classappend >
+                    <a href="#" th:href="@{/listaMascotas}">Ver mascotas</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/listaProductos}">Ver inventario</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/listaDueniosMascotas}">Ver Duenios y sus mascotas</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/mascotasAtendidasPorVeterinario}">Ver mascotas atendidas por veterinario</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/listaFacturas}">Ver facturas del cliente</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Consulta de Producto </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Ingrese el id del producto</h1>
+<form th:action="@{/productos/eliminar}" th:object="${form}" method="post">
+    <p>Id de mascota: <input type="text" th:field="*{idProducto}" /></p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>

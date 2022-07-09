@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Facturas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Facturas:</h1>
+<p Informacion th:each="info: ${form.infoDuenio}" th:text="${info}"></p>
+
+<form th:action="@{/}" th:object="${form}" method="get">
+
+    <p><input type="submit" value="Menu Principal" /> </p>
+</form>
+
+
+</body>
+</html>

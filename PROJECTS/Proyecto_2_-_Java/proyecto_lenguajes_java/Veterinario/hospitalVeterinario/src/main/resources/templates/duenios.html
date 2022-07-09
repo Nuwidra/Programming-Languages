@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Duenios</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Duenios del Sistema</h1>
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+    <div class="container">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+
+                <li th:classappend >
+                    <a href="#" th:href="@{/duenios/consulta}">Consultar</a>
+                </li>
+
+                <li th:classappend >
+                    <a href="#" th:href="@{/duenios/insertar}">Insertar</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/duenios/modificar}">Modificar</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/duenios/eliminar}">Eliminar</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Lista de productos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Lista de productos</h1>
+
+<p Informacion th:each="infoInventario: ${form.inventario}" th:text="${infoInventario}"></p>
+
+<form th:action="@{/}" th:object="${form}" method="Get">
+
+    <p><input type="submit" value="Menu Principal" /> </p>
+</form>
+
+
+</body>
+</html>

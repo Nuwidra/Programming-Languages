@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Informacion del duenio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Formulario de consulta medica</h1>
+<h1>Informacion del duenio y sus mascotas</h1>
+<p Informacion th:each="info: ${form.infoDuenio}" th:text="${info}"></p>
+
+<form th:action="@{/consultas/submit}" th:object="${form}" method="post">
+    <p>Cedula del duenio: <input type="text" th:field="*{cedulaDuenio}" /></p>
+    <p>Cedula del veterinario: <input type="text" th:field="*{cedulaVeterinario}" /></p>
+    <p>Id de la mascota: <input type="text" th:field="*{idMascota}" /></p>
+    <p>id del medicamento recomendado por el veterinario: <input type="text" th:field="*{idMedicamento}" /></p>
+    <p>cantidad del medicamento: <input type="text" th:field="*{cantidadProducto}" /></p>
+    <p>observacion de la consulta: <input type="text" th:field="*{observacion}" /></p>
+
+
+
+
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Informacion del duenio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Formulario de compra en la tienda</h1>
+<h1>Informacion del duenio y sus mascotas</h1>
+<p Informacion th:each="info: ${form.infoDuenio}" th:text="${info}"></p>
+
+<form th:action="@{/tienda/submit}" th:object="${form}" method="post">
+    <p>Cedula del duenio: <input type="text" th:field="*{cedulaDuenio}" /></p>
+    <p>Id de la mascota: <input type="text" th:field="*{idMascota}" /></p>
+    <p>id del producto a comprar: <input type="text" th:field="*{idProducto}" /></p>
+    <p>cantidad: <input type="text" th:field="*{cantidadProducto}" /></p>
+
+
+
+
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+
+
+<h1>Informacion de los productos</h1>
+<p Informacion th:each="infoInventario: ${form.inventario}" th:text="${infoInventario}"></p>
+
+
+
+</body>
+</html>

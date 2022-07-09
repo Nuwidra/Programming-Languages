@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Exito</title>
+</head>
+<body>
+Datos ingresados con exito, vuelva al menu principal.
+<form th:action="@{/}" th:object="${form}" method="Get">
+
+    <p><input type="submit" value="Menu Principal" /> </p>
+</form>
+</body>
+</html>

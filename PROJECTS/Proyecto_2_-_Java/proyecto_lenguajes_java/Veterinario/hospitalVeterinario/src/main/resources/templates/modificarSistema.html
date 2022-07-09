@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema</title>
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" th:fragment="header">
+    <div class="container">
+
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li th:classappend >
+                    <a href="#" th:href="@{/duenios}">Duenios</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/veterinarios}">Veterinarios</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/mascotas}">Mascotas</a>
+                </li>
+                <li th:classappend >
+                    <a href="#" th:href="@{/productos}">Productos</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

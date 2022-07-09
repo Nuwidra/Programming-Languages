@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Consulta de la mascota </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Ingrese el Id de la mascota</h1>
+<form th:action="@{/mascotas/modificar}" th:object="${form}" method="post">
+  <p>Id de la mascota: <input type="text" th:field="*{idMascota}" /></p>
+  <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>

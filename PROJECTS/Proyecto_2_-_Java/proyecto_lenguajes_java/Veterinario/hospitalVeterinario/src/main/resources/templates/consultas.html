@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Consulta medica </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h1>Consulta medica Ingrese la cedula del cliente</h1>
+<form th:action="@{/consultas}" th:object="${form}" method="post">
+    <p>Cedula del duenio: <input type="text" th:field="*{cedulaDuenio}" /></p>
+    <p><input type="submit" value="Submit" /> </p>
+</form>
+</body>
+</html>
