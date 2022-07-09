@@ -1,0 +1,46 @@
+% ========================================
+% Pablo Muñoz Hidalgo
+% Jonathan Quesada Salas
+% ========================================
+
+% ========================================
+% Pregunta 1
+% ========================================
+suma_lista([],0).
+
+suma_lista([Cabeza|Cola], Sumatotal):-
+          suma_lista(Cola, Suma),
+          Sumatotal is Cabeza+Suma.
+
+% ========================================
+% Pregunta 2
+% ========================================
+list_sum([Item], Item).
+list_sum([Item1,Item2 | Tail], Total) :-
+    list_sum([Item1+Item2|Tail], Total).
+
+% ========================================
+% Pregunta 3
+% ========================================
+prodint([], [], 0).
+prodint([Cabeza1|Cola1], [Cabeza2|Cola2], Resultado) :-
+  Prod is Cabeza1 * Cabeza2,
+  prodint(Cola1, Cola2, ListaRestante),
+  Resultado is Prod + ListaRestante.
+
+% ========================================
+% Pregunta 4
+% ========================================
+numero_maximo([L], L).
+numero_maximo([Cabeza|Cola], Max) :- numero_maximo(Cola, MaxRec),
+                                  Max is max(MaxRec, Cabeza).
+
+% ========================================
+% Pregunta 5
+% ========================================
+pivot(_, [], [], []).
+pivot(Pivot, [Cabeza|Cola], [Cabeza|MenorOIgual], Mayor) :- Pivot >= Cabeza, pivot(Pivot, Cola, MenorOIgual, Mayor).
+pivot(Pivot, [Cabeza|Cola], MenorOIgual, [Cabeza|Mayor]) :- pivot(Pivot, Cola, MenorOIgual, Mayor).
+
+quicksort([], []).
+quicksort([Cabeza|Cola], Ordenada) :- pivot(Cabeza, Cola, Lista1, Lista2), quicksort(Lista1, OrdenadaLista1), quicksort(Lista2, OrdenadaLista2), append(OrdenadaLista1, [Cabeza|OrdenadaLista2], Ordenada).

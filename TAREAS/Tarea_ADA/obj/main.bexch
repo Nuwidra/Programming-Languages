@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+F:\Proyectos ADA\default.gpr
+20211005204020 28547b8d3e35e3aa94dd72e51c9aa060
+[BOUND OBJECT FILES]
+F:\Proyectos ADA\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LF:\Proyectos ADA\obj\
+-LF:\Proyectos ADA\obj\
+-LF:/gnat_ada/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+F:/gnat_ada/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

@@ -1,0 +1,10 @@
+% Pablo Muñoz Hidalgo y Jonathan Quesada Salas
+father(a,b).
+father(a,c).
+father(b,d).
+father(b,e).
+father(c,f).
+
+brother(X,Y):-father(Z,X),father(Z,Y).
+cousin(X,Y):-father(Z,X),father(A,Z),father(A,W),father(W,Y).
+grandson(X,Y):-father(Z,X),father(Y,Z).
